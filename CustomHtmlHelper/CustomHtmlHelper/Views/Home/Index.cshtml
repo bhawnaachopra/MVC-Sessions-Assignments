@@ -1,0 +1,20 @@
+﻿@using CustomHtmlHelper.Models
+@{
+    ViewBag.Title = "Home Page";
+}
+@model ImageModel
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h4><b>Here is an image for you!</b></h4>
+        <br />
+        @Html.ImageFor(Model.ImageUrl, "Alternate text", "91", "269")
+    </div>
+</body>
+</html>
